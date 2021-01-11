@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name                = 'Eddid_TencentOpenAPI'
-  spec.version             = '1.0.0'
+  spec.version             = '1.0.1'
   spec.summary             = 'Tencent QQ Open SDK 1.0.0 version'
   spec.requires_arc        = true
   spec.homepage            = 'http://open.qq.com/'
@@ -18,8 +18,8 @@ Pod::Spec.new do |spec|
                           }
   spec.author              = { 'Tencent' => 'open@qq.com' }
   spec.platform            = :ios
-  spec.source              = { :git => 'https://github.com/LiShuHua23/Eddid-TencentOpenAPI.git', :tag => "v1.0.0" }
+  spec.source              = { :git => 'https://github.com/LiShuHua23/Eddid-TencentOpenAPI.git', :tag => "#{s.version}" }
   spec.frameworks = 'Security','SystemConfiguration','CoreGraphics','CoreTelephony','WebKit'
   spec.libraries = 'sqlite3','iconv','stdc++','z'
-  spec.ios.vendored_frameworks = 'TencentOpenAPI.framework'
+  spec.ios.vendored_frameworks = 'sdk/*.framework'
 end
